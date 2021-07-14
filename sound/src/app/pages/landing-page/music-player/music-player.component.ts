@@ -13,7 +13,7 @@ export class MusicPlayerComponent implements OnInit,AfterViewInit {
   //Ezek a sliderhez kellenek
   public value =0;
   public max= 100;
-
+  public playState: string = "play_arrow";
 
   constructor() { }
 
@@ -32,14 +32,15 @@ export class MusicPlayerComponent implements OnInit,AfterViewInit {
     if(this.index>playList.length-1){this.index=0};
     this.audio.nativeElement.src = path+playList[this.index];
     this.value=0;
+    this.playState = "pause";
     this.audio.nativeElement.play();
   }
 
   setStop(){
     this.value= this.audio.nativeElement.currentTime
     this.stop = !this.stop;
-    if(this.stop){this.audio.nativeElement.pause()}
-    else{this.audio.nativeElement.play()}
+    if(this.stop){this.audio.nativeElement.pause(); this.playState = "play_arrow";}
+    else{this.audio.nativeElement.play(); this.playState = "pause";}
   }
 
 }
