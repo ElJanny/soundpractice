@@ -1,0 +1,15 @@
+<div class="audio-container">
+  <audio  #musicplayer>
+
+     </audio>
+     <mat-slider
+      [(ngModel)]="value"
+        min="0"
+        max="max"
+        step="4" tickInterval="3"
+        aria-label="unit(s)">
+      </mat-slider>
+     <button (click)="setAudio(-1)"> vissza </button>
+     <button (click)="setStop()"> lejátsszás</button>
+     <button (click)="setAudio(1)"> előre </button>
+</div>
