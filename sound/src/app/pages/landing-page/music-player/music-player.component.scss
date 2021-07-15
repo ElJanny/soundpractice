@@ -16,5 +16,16 @@ mat-slider{
 
 .button-container button{
   margin-inline: 1rem;
-  border-radius: 100%;
+  min-height: 4rem;
+  max-width:2rem;
+  border-radius: 50%;
 }
+
+.title{
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  color:white;
+}
+
+
