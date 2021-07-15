@@ -9,13 +9,15 @@ import { MusicPlayerComponent } from './pages/landing-page/music-player/music-pl
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuelModule } from './modules/material-moduel/material-module.module';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     MainLayoutComponent,
-    MusicPlayerComponent
+    MusicPlayerComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
