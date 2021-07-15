@@ -1,0 +1,20 @@
+.audio-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+mat-slider{
+  width: 100%;
+}
+
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button{
+  margin-inline: 1rem;
+  border-radius: 100%;
+}
