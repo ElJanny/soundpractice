@@ -10,6 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuelModule } from './modules/material-moduel/material-module.module';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { ScrolltotopComponent } from './pages/landing-page/scrolltotop/scrolltotop.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { ContactComponent } from './pages/contact/contact.component';
     LandingPageComponent,
     MainLayoutComponent,
     MusicPlayerComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    ScrolltotopComponent,
+    GalleryComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
