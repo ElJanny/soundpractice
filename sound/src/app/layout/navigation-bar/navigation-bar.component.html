@@ -1,0 +1,15 @@
+<div *ngIf="scrolledTop; else scrolledDown">
+  <nav
+  (scroll)="onWindowScroll($event)"
+  class="bottomNavbar">
+  <a href="#contact">Elérhetőségek</a> | <a>Rólam</a> | <a> Galéria </a>
+  </nav>
+</div>
+
+<ng-template #scrolledDown>
+  <nav
+  (scroll)="onWindowScroll($event)"
+  class="topNavbar">
+  <a class="actual">{{menuTitles[0]}}</a> <span class="spacer"></span> <a>{{menuTitles[1]}}</a> | <a>{{menuTitles[2]}}</a>
+  </nav>
+</ng-template>

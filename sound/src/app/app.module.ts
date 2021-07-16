@@ -14,6 +14,7 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { ScrolltotopComponent } from './pages/landing-page/scrolltotop/scrolltotop.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
+import { NavigationBarComponent } from './layout/navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
     FooterComponent,
     ScrolltotopComponent,
     GalleryComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
