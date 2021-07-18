@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Gallery } from 'angular-gallery';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gallery: Gallery) { }
 
   ngOnInit(): void {
   }
+
+  public kepId = 0;
+  
 
 }
