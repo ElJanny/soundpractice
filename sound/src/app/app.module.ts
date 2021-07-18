@@ -15,6 +15,7 @@ import { ScrolltotopComponent } from './pages/landing-page/scrolltotop/scrolltot
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { NavigationBarComponent } from './layout/navigation-bar/navigation-bar.component';
+import { IvyGalleryModule } from 'angular-gallery';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NavigationBarComponent } from './layout/navigation-bar/navigation-bar.c
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModuelModule,
-    FormsModule
+    FormsModule,
+    IvyGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
